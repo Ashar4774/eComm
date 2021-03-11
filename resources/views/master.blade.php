@@ -27,7 +27,7 @@
 <style>
     .custom-login,
     .custom-product {
-        height: 500px;
+        height: 600px;
         padding-top: 10px;
     }
 
@@ -52,6 +52,26 @@
 
     .carousel-inner{
         background-color: #8080802b!important;
+    }
+
+    /* footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    } */
+
+    .trending-wrapper{
+        margin: 30px;
+    }
+
+    .trending-item{
+        /* margin: 0 20px; */
+        float: left;
+        width: 30%;
+    }
+
+    .trending-img{
+        height: 100px;
     }
 
 </style>
