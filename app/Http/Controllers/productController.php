@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Product;
 class productController extends Controller
 {
     //
     function index(){
-        return "Welcome, you have been login successfully";
+        $data = Product::all();
+        return view("product",['product'=>$data]);
     }
 }

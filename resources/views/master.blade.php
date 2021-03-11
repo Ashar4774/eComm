@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
         integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
@@ -24,9 +25,35 @@
     @yield('content')
 </body>
 <style>
-    .custom-login{
+    .custom-login,
+    .custom-product {
         height: 500px;
         padding-top: 10px;
     }
+
+    img.slider-img {
+        height: 400px !important;
+    }
+
+    .carousel-control-next:hover {
+        background-image: linear-gradient(45deg, transparent, black) !important;
+    }
+
+    .carousel-control-prev:hover {
+        background-image: linear-gradient(45deg, black, transparent) !important;
+    }
+
+    .carousel-caption {
+        background-color: #00000073;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #8080808a;
+        color: #ffffffed;
+    }
+
+    .carousel-inner{
+        background-color: #8080802b!important;
+    }
+
 </style>
+
 </html>
