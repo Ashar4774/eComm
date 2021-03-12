@@ -19,6 +19,12 @@ Route::get('/login', function () {
 });
 
 Route::post("/login",[userCOntroller::class,'login']);
+
+// product routes
 Route::get("/", [productController::class,'index']);
 Route::get("detail/{id}", [productController::class, 'detail']);
 Route::get("search", [productController::class, 'search']);
+Route::get("/view_cart", [productController::class, 'view_cart']);
+Route::post("add_to_cart", [productController::class, 'addToCart']);
+
+
