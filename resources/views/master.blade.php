@@ -74,6 +74,15 @@
         height: 100px;
     }
 
+    .div-detail-img{
+        background-color: rgba(128, 128, 128, 0.288);
+    }
+
+    .detail-img{
+        height: 200px;
+        /* margin: 0 auto; */
+    }
+
 </style>
 
 </html>

@@ -14,12 +14,14 @@
             <div class="carousel-inner">
                 @foreach ($product as $item)
                     <div class="carousel-item {{ $item['id'] == 1 ? 'active' : '' }}">
-                        <img class="slider-img" src="{{ $item['gallery'] }}" class="d-block w-100"
-                            alt="{{ $item['id'] }}">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>{{ $item['name'] }}</h5>
-                            <p>{{ $item['description'] }}</p>
-                        </div>
+                        <a href="detail/{{ $item['id'] }}">
+                            <img class="slider-img" src="{{ $item['gallery'] }}" class="d-block w-100"
+                                alt="{{ $item['id'] }}">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>{{ $item['name'] }}</h5>
+                                <p>{{ $item['description'] }}</p>
+                            </div>
+                        </a>
                     </div>
                 @endforeach
             </div>
@@ -39,10 +41,12 @@
             @foreach ($product as $item)
 
                 <div class="trending-item">
-                    <img class="trending-img" src="{{ $item['gallery'] }}" alt="{{ $item['id'] }}">
-                    <div class="">
-                        <h5>{{ $item['name'] }}</h5>
-                    </div>
+                    <a href="detail/{{ $item['id'] }}">
+                        <img class="trending-img" src="{{ $item['gallery'] }}" alt="{{ $item['id'] }}">
+                        <div class="">
+                            <h5>{{ $item['name'] }}</h5>
+                        </div>
+                    </a>
                 </div>
             @endforeach
         </div>
