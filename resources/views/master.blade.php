@@ -25,6 +25,11 @@
     @yield('content')
 </body>
 <style>
+    .search-box{
+        width: 500px!important;
+    }
+
+    .Search-product,
     .custom-login,
     .custom-product {
         height: 600px;
